@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  /* Primary  */
+  --Blue: hsl(223, 87%, 63%);
+
+  /* Secondary */
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  /* line-height: 1.5; */
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--Gray);
+  margin-bottom: 3rem;
+}
+
+h1 span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+p {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+input {
+  display: block;
+  width: 42.7rem;
+  height: 5.5rem;
+  border-radius: 6rem;
+  background-color: transparent;
+  border: 1px solid var(--Pale-Blue);
+  outline: none;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-right: 1.7rem;
+}
+
+input::placeholder {
+  color: var(--Pale-Blue);
+  font-size: 1.4rem;
+}
+
+button {
+  display: inline-block;
+  width: 20.6rem;
+  background-color: var(--Blue);
+  /* outline: none; */
+  border: none;
+  padding: 1.6rem;
+  border-radius: 6rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.dashboard {
+  max-width: 64rem;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.8rem;
+}
+
+.fa-circle {
+  color: var(--Blue);
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  color: var(--Blue);
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: var(--Gray);
+}

@@ -3,15 +3,25 @@ const email = document.getElementById('email');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
+  // check for email value 
+  const email = form['email'];
   const emailValidate = email.value;
+  const small = form.querySelector('small');
 
   // check if email is valid 
-  if (email.value = '') {
-    form.innerHTML = 'Whoops! It looks like you forgot to add your email';
-  } else if (!validateEmail(emailValidate)) {
+  if (!emailValidate) {
+    // say it's empty 
+    email.classList.add('error');
+    small.innerText = 'Whoops! It looks like you forgot to add your email';
+    small.style.visibility = 'visible';
+  }else if (!validateEmail(emailValidate)) {
     form.classList.add('error');
+    small.innerText = 'Please provide a valid email address';
+    small.style.visibility = 'visible';
   } else {
     form.classList.remove('error');
+    small.innerText = '';
+    small.style.visibility = hidden;
   }
 });
 

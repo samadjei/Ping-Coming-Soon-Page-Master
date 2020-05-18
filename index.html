@@ -29,7 +29,9 @@
       <p>Subscribe and get notified</p>
 
       <form id="form">
-        <input type="email" placeholder="Your email address..." aria-labelledby="emailInput" />
+        <input type="email" id="email" placeholder="Your email address..." aria-labelledby="emailInput" />
+        <small>Please provide a valid email address</small>
+
         <button aria-labelledby="emailButton">
           Notify Me
         </button>
@@ -39,26 +41,17 @@
         <img src="images/illustration-dashboard.png" alt="Dashboard" />
       </div>
 
-      <div class="socials">
-        <div class="social">
-          <span class="fa-stack">
-            <i class="far fa-circle fa-stack-2x"></i>
-            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-          </span>
-        </div>
-        <div class="social">
-          <span class="fa-stack">
-            <i class="far fa-circle fa-stack-2x"></i>
-            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </div>
-        <div class="social">
-          <span class="fa-stack">
-            <i class="far fa-circle fa-stack-2x"></i>
-            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
 
       <div class="copyright">
         &copy; Copyright Ping. All rights reserved.
